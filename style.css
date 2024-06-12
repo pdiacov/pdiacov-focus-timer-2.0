@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+  appearance: none;
+}
+
+#app {
+  display: flex;
+  gap: 19.2rem;
+  align-items: center;
+}
+
+.timer-wrap {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+}
+
+#timer {
+  font-size: 12.6rem;
+  display: flex;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#controls button + button {
+  margin-left: 4rem;
+}
+
+
+#sounds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+#sounds button {
+  background-color: #E1E1E6;
+  padding: 4.8rem;
+  border-radius: 2.4rem;
+
+  transition: 200ms;
+}
+
+#sounds button:hover {
+  transform: scale(1.1);
+}
+
+#sounds .music-on {
+  background-color: #02799D;
+  fill: #FFFFFF;
+}
+
+#sounds button:not(.music-on) .secondary,
+#sounds .music-on img:not(.secondary) {
+  display: none;
+}
+
+@media (max-width: 55rem) {
+  #app {
+    flex-direction: column;
+    gap: 8rem;
+  }
+}
