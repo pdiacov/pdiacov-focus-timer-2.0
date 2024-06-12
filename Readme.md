@@ -7,7 +7,7 @@ Projeto construído no Stage 05 do Explorer da Rocketseat
 ![preview](./assets/Preview.png)
 
 
-<!-- [🔗 Clique aqui para acessar](https://pdiacov.github.io/jogo-da-adivinhacao/) -->
+[🔗 Clique aqui para acessar](https://pdiacov.github.io/pdiacov-focus-timer-2.0/)
 
 ## Índice
 - [Tecnologias](#tecnologias)
